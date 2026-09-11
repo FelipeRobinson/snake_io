@@ -1,0 +1,39 @@
+:root {
+    /* Personalize aqui as cores do jogo e da interface. */
+    --fundo: #090e1a;
+    --painel: #111b2d;
+    --cobra: #63f5bc;
+    --cabeca: #d3ffec;
+    --alimento: #ff689e;
+    --obstaculo: #64779b;
+    --grade: #18243a;
+    --texto: #edf5ff;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(ellipse at top, #1a2942, var(--fundo) 65%); color: var(--texto); font-family: system-ui, sans-serif; min-height: 100vh; }
+main { max-width: 820px; padding: 28px 20px; margin: auto; }
+header { text-align: center; }
+.eyebrow { color: var(--cobra); font-size: 11px; letter-spacing: 4px; }
+h1 { margin: 8px 0; font-size: clamp(30px, 6vw, 46px); letter-spacing: -2px; }
+header > p:last-child, footer { color: #99abc5; font-size: 14px; }
+.scores { display: flex; gap: 12px; margin: 24px 0 14px; }
+.scores div { flex: 1; background: var(--painel); border: 1px solid #26334a; border-radius: 12px; padding: 12px 16px; font-size: 10px; letter-spacing: 1px; }
+strong { display: block; color: var(--cobra); font-size: 26px; }
+.board { position: relative; border: 1px solid #34536a; border-radius: 14px; overflow: hidden; box-shadow: 0 12px 60px #0005; }
+canvas { display: block; width: 100%; background: var(--fundo); }
+#overlay { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #090e1acc; text-align: center; padding: 16px; }
+#overlay[hidden] { display: none; }
+#overlay h2 { margin: 0; font-size: 28px; }
+#overlay p { color: #b4c7dc; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 18px; }
+button { background: var(--cobra); border: 1px solid transparent; border-radius: 8px; padding: 12px 22px; color: #08271d; font: inherit; font-weight: 700; cursor: pointer; touch-action: manipulation; }
+button:hover { filter: brightness(1.12); }
+button:focus-visible { outline: 3px solid var(--alimento); outline-offset: 3px; }
+button:disabled { opacity: .45; cursor: default; }
+.secondary, .dpad button { background: var(--painel); color: var(--texto); border-color: #34536a; }
+label { color: #bac9df; font-size: 13px; }
+input { accent-color: var(--cobra); }
+.dpad { text-align: center; margin: 18px 0; }
+.dpad button { min-width: 60px; margin: 3px; }
+footer { text-align: center; line-height: 1.8; margin-top: 20px; }
+#error { text-align: center; color: var(--alimento); }

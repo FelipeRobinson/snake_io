@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Snake IO</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">ARCADE / C EDITION</p>
+        <h1 id="title">Snake IO</h1>
+        <p>Um clássico, um novo brilho. Até onde você chega?</p>
+      </header>
+      <section class="scores" aria-label="Pontuação">
+        <div>PONTOS <strong id="score">0</strong></div>
+        <div>RECORDE LOCAL <strong id="best">0</strong></div>
+        <div>NÍVEL <strong id="level">1</strong></div>
+      </section>
+      <div class="board">
+        <canvas id="game" width="768" height="576" aria-label="Tabuleiro da cobrinha"></canvas>
+        <div id="overlay"><h2 id="message">Pronto para jogar?</h2><p id="hint">Clique em Iniciar para começar.</p></div>
+      </div>
+      <div class="toolbar">
+        <button id="start">Iniciar</button>
+        <button id="pause" class="secondary" disabled>Pausar</button>
+        <label><input id="obstacles" type="checkbox"> Obstáculos na próxima partida</label>
+      </div>
+      <div class="dpad" aria-label="Controles por toque">
+        <button data-dir="up" aria-label="Cima">↑</button>
+        <div><button data-dir="left" aria-label="Esquerda">←</button><button data-dir="down" aria-label="Baixo">↓</button><button data-dir="right" aria-label="Direita">→</button></div>
+      </div>
+      <footer>Setas ou WASD para mover · Espaço para pausar · R para reiniciar<br>Coma os pontos rosas. Evite as paredes, os obstáculos e o próprio corpo.</footer>
+      <p id="error" role="alert"></p>
+    </main>
+  </body>
+</html>
