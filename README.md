@@ -1,4 +1,4 @@
-# Cobrinha Neon em C
+# SNAKE IO em C
 
 Jogo com visual neon, velocidade progressiva, obstáculos opcionais, pausa,
 controles por teclado/toque e recorde salvo no navegador.

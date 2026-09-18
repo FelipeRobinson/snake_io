@@ -1,7 +1,7 @@
 #ifndef CONFIGURACAO_H
 #define CONFIGURACAO_H
 /* Personalize aqui e recompile o jogo. */
-#define TITULO_JOGO "Cobrinha Neon"
+#define TITULO_JOGO "Snake IO"
 #define LARGURA_TABULEIRO 24
 #define ALTURA_TABULEIRO 18
 #define COMPRIMENTO_INICIAL 4
